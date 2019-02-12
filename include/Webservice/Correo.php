@@ -425,7 +425,7 @@ function cbwsCorreo($email, $telefono, $facebook, $fbedad, $desde, $urlkubus, $d
           $accountid = $queryResult[0]['id'];
           $account = vtws_retrieve($accountid, $user);
           unset($account['assigned_user_id']);
-          $record = $client->doUpdate($module,$account);
+          $record = vtws_update($account, $user);
         }
 
     }
