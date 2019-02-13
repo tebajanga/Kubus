@@ -29,7 +29,6 @@ require_once 'include/Webservices/Update.php';
 function cbwsCorreo($where, $fields, $servicecategory, $codigopromocion, $adw, $user) {
     
     global $adb;
-	$fields = $values = array();
     $record = null;
     
     $query = 'SELECT id FROM vtiger_account WHERE '.$where.'';
