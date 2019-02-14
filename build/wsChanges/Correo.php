@@ -18,7 +18,7 @@ $operationInfo = array(
 	'include' => 'include/Webservices/Correo.php',
 	'handler' => 'cbwsCorreo',
 	'prelogin'=> 0,
-	'type'    => 'GET',
+	'type'    => 'POST',
 	'parameters' => array(
 		array('name' => 'where','type' => 'string'),
 		array('name' => 'fields','type' => 'array'),
