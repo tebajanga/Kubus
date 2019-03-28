@@ -37,7 +37,7 @@ function cbwsCorreo($where, $fields, $servicecategory, $codigopromocion, $adw, $
         $record = vtws_create('Accounts', $fields, $user);
     } else {
         $account_id = $adb->query_result($result, 0, "id");
-        $account = vtws_retrieve($accountid, $user);
+        $account = vtws_retrieve($account_id, $user);
         unset($account['assigned_user_id']);
         $record = vtws_update($account, $user);
     }
